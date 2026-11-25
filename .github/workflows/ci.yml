@@ -1,0 +1,22 @@
+name: ci
+on:
+  push:
+    branches: [main]
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: PHP syntax
+        run: git ls-files -z '*.php' | xargs -0 -n1 php -l
+      - name: Manifest points at real files
+        run: |
+          python3 - <<'PY'
+          import json, pathlib, sys
+          bad = [f"{e['dir']}: {k}" for e in json.load(open("exams/exams.json"))
+                 for k in ("entry", "sql", "pdf") if not (pathlib.Path("exams", e["dir"], e[k])).is_file()]
+          print("\n".join(bad) or "PASS: manifest OK"); sys.exit(1 if bad else 0)
+          PY
