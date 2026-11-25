@@ -2,7 +2,7 @@
   <img src=".github/readme/banner.svg" width="100%" alt="WR · itTechnicianExams: INF.03 IT technician exam solutions">
 </p>
 
-<p><b>English</b> · <a href="README.pl.md">Polski</a></p>
+<p><img alt="English" src="https://img.shields.io/badge/English-20C9B0?style=flat-square">&nbsp;<a href="README.pl.md"><img alt="Polski" src="https://img.shields.io/badge/Polski-526077?style=flat-square"></a></p>
 
 <p>
   <img alt="status: active" src="https://img.shields.io/badge/status-active-20C9B0?style=flat-square&labelColor=121B2B">
@@ -14,7 +14,6 @@
 **Solutions to the Polish practical exams for the IT technician qualification INF.03 (formerly EE.09 and E.14).**
 Each folder is one exam session: qualification, year, month and task name.
 
-[Report an issue](../../issues)
 
 ## What I practised
 
@@ -53,9 +52,6 @@ This README is available in English (default) and [Polish](README.pl.md). Task c
 
 ## License
 
-No licence file: all rights reserved. Ask before reusing the code.
-Author: WR
+No licence file: all rights reserved. Ask before reusing the code. Author: WR.
 
----
-
-<p align="center"><sub><b>WR</b> · <a href="https://github.com/vviktooor">vviktooor</a></sub></p>
+Found a bug or have an idea? [Open an issue](../../issues).
