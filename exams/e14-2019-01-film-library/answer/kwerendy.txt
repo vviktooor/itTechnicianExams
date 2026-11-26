@@ -1,0 +1,16 @@
+-- Zapytanie 1: nowy film "Suburbicon" z 2017 roku, gatunek komedia (id 5), ocena 5.
+-- Reżysera (George Clooney) nie ma w tabeli rezyserzy, a pole rezyserzy_id jest NOT NULL bez domyślnej wartości, więc wstawiamy 0.
+INSERT INTO filmy (gatunki_id, rezyserzy_id, tytul, rok, ocena) VALUES (5, 0, 'Suburbicon', 2017, 5);
+
+-- Zapytanie 2: tytul z tabeli filmy i nazwa gatunku z tabeli gatunki dla filmów z oceną 6, z relacją
+SELECT filmy.tytul, gatunki.nazwa FROM filmy JOIN gatunki ON gatunki.id = filmy.gatunki_id WHERE filmy.ocena = 6;
+
+-- Zapytanie 3: tytul i rok dramatów (gatunki_id = 3) z oceną 5
+SELECT tytul, rok FROM filmy WHERE gatunki_id = 3 AND ocena = 5;
+
+-- Zapytanie 4: tabela aktorzy (id numeryczne NOT NULL, imie i nazwisko tekstowe)
+CREATE TABLE aktorzy (
+    id INT NOT NULL,
+    imie TEXT,
+    nazwisko TEXT
+);

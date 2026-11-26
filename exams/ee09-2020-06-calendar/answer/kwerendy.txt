@@ -1,0 +1,11 @@
+-- Zapytanie 1: miesiac i rok zadania z datą 2020-07-01
+SELECT miesiac, rok FROM zadania WHERE dataZadania = '2020-07-01';
+
+-- Zapytanie 2: dataZadania i wpis dla zadań z lipca
+SELECT dataZadania, wpis FROM zadania WHERE miesiac = 'lipiec';
+
+-- Zapytanie 3: miesiące bez powtórzeń zaczynające się na literę „l”
+SELECT DISTINCT miesiac FROM zadania WHERE miesiac LIKE 'l%';
+
+-- Zapytanie 4: nowy wpis dla zadania z datą 2020-07-13
+UPDATE zadania SET wpis = 'Wycieczka: jezioro' WHERE dataZadania = '2020-07-13';

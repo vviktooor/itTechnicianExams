@@ -1,0 +1,11 @@
+-- Zapytanie 1: imie, nazwisko, adres, miasto, czyRODO, czyBadania pracownika o id 2
+SELECT imie, nazwisko, adres, miasto, czyRODO, czyBadania FROM pracownicy WHERE id = 2;
+
+-- Zapytanie 2: liczba wszystkich rekordów w tabeli pracownicy
+SELECT COUNT(*) FROM pracownicy;
+
+-- Zapytanie 3: id, imie, nazwisko pracownika o id 2
+SELECT id, imie, nazwisko FROM pracownicy WHERE id = 2;
+
+-- Zapytanie 4: id pracownika oraz nazwa i opis jego stanowiska (relacja) dla pracownika o id 2
+SELECT pracownicy.id, stanowiska.nazwa, stanowiska.opis FROM pracownicy JOIN stanowiska ON pracownicy.stanowiska_id = stanowiska.id WHERE pracownicy.id = 2;

@@ -17,6 +17,8 @@ jobs:
           python3 - <<'PY'
           import json, pathlib, sys
           bad = [f"{e['dir']}: {k}" for e in json.load(open("exams/exams.json"))
-                 for k in ("entry", "sql", "pdf") if not (pathlib.Path("exams", e["dir"], e[k])).is_file()]
+                 for k in ("entry", "sql", "pdf", "queries") if not (pathlib.Path("exams", e["dir"], e[k])).is_file()]
           print("\n".join(bad) or "PASS: manifest OK"); sys.exit(1 if bad else 0)
           PY
+      - name: Every exam has all its queries
+        run: node tools/queries.mjs check

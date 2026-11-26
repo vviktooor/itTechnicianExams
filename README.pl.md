@@ -13,7 +13,7 @@
 </p>
 
 **Rozwiązania praktycznej części egzaminu zawodowego technik informatyk, kwalifikacja INF.03 (dawniej EE.09 i E.14).**
-Dwanaście sesji, każda w `exams/<kwalifikacja>-<rok>-<miesiąc>-<zadanie>/` z oficjalnym arkuszem, zrzutem bazy i moim rozwiązaniem. Każde rozwiązanie poniżej zostało uruchomione na PHP 8.3 i MariaDB i sfotografowane.
+Dwanaście sesji, każda w `exams/<kwalifikacja>-<rok>-<miesiąc>-<zadanie>/` podzielona na `sheet/` (oficjalny arkusz i materiały), `solution/` (strony) i `answer/` (wszystkie kwerendy z komentarzami i ich wyniki). Każde rozwiązanie poniżej zostało uruchomione na PHP 8.3 i MariaDB i sfotografowane.
 
 ## Czego się nauczyłem
 
@@ -29,28 +29,29 @@ Wymagania: PHP 8 z `mysqli` i MariaDB/MySQL (działa XAMPP), Node z Playwright t
 ```bash
 git clone https://github.com/vviktooor/itTechnicianExams.git
 cd itTechnicianExams
-mysql -e 'CREATE DATABASE wedkowanie' && mysql wedkowanie < exams/inf03-2022-06-anglers-portal/baza.sql
+mysql -e 'CREATE DATABASE wedkowanie' && mysql wedkowanie < exams/inf03-2022-06-anglers-portal/sheet/baza.sql
 php -S localhost:8080 -t exams/inf03-2022-06-anglers-portal
+# otwórz http://localhost:8080/solution/wedkuj.php
 ```
 
-Nazwy baz i strony startowe każdego egzaminu są w `exams/exams.json`. `node tools/screenshots.mjs` odtwarza wszystkie zrzuty.
+Nazwy baz, strony startowe i pliki kwerend każdego egzaminu są w `exams/exams.json`. `node tools/screenshots.mjs` odtwarza wszystkie zrzuty.
 
 ## Rozwiązania
 
 | Zrzut | Egzamin | Zadanie | Pliki |
 |---|---|---|---|
-| <a href="docs/screenshots/inf03-2023-01-painting.png"><img src="docs/screenshots/inf03-2023-01-painting.png" width="220" alt="Malowanie"></a> | **INF.03** 2023-01 | Malowanie | [rozwiązanie](exams/inf03-2023-01-painting/) · [arkusz](exams/inf03-2023-01-painting/inf03-2023-styczen-egzamin-zawodowy-praktyczny.pdf) |
-| <a href="docs/screenshots/inf03-2022-06-anglers-portal.png"><img src="docs/screenshots/inf03-2022-06-anglers-portal.png" width="220" alt="Portal dla wędkarzy"></a> | **INF.03** 2022-06 | Portal dla wędkarzy | [rozwiązanie](exams/inf03-2022-06-anglers-portal/) · [arkusz](exams/inf03-2022-06-anglers-portal/inf03-2022-czerwiec-egzamin-zawodowy-praktyczny.pdf) |
-| <a href="docs/screenshots/ee09-2023-01-employee-records.png"><img src="docs/screenshots/ee09-2023-01-employee-records.png" width="220" alt="Akta pracownicze"></a> | **EE.09** 2023-01 | Akta pracownicze | [rozwiązanie](exams/ee09-2023-01-employee-records/) · [arkusz](exams/ee09-2023-01-employee-records/ee09-2023-styczen-egzamin-zawodowy-praktyczny.pdf) |
-| <a href="docs/screenshots/ee09-2022-06-wholesale.png"><img src="docs/screenshots/ee09-2022-06-wholesale.png" width="220" alt="Hurtownia"></a> | **EE.09** 2022-06 | Hurtownia | [rozwiązanie](exams/ee09-2022-06-wholesale/) · [arkusz](exams/ee09-2022-06-wholesale/EE.09-03-22.06-SG.pdf) |
-| <a href="docs/screenshots/ee09-2022-01-fishing-card.png"><img src="docs/screenshots/ee09-2022-01-fishing-card.png" width="220" alt="Karta wędkarska"></a> | **EE.09** 2022-01 | Karta wędkarska | [rozwiązanie](exams/ee09-2022-01-fishing-card/) · [arkusz](exams/ee09-2022-01-fishing-card/ee09-2022-styczen-egzamin-zawodowy-praktyczny.pdf) |
-| <a href="docs/screenshots/ee09-2020-06-organizer.png"><img src="docs/screenshots/ee09-2020-06-organizer.png" width="220" alt="Organizer"></a> | **EE.09** 2020-06 | Organizer | [rozwiązanie](exams/ee09-2020-06-organizer/) · [arkusz](exams/ee09-2020-06-organizer/Arkusz%20praktyczny%20EE.09%20-%202020%20-%20czerwiec%20-%20zad.%2001%20%28php%29%20-%20Technik%20informatyk.pdf) |
-| <a href="docs/screenshots/ee09-2020-06-calendar.png"><img src="docs/screenshots/ee09-2020-06-calendar.png" width="220" alt="Kalendarz"></a> | **EE.09** 2020-06 | Kalendarz | [rozwiązanie](exams/ee09-2020-06-calendar/) · [arkusz](exams/ee09-2020-06-calendar/ee.09-03-20.06-SG.pdf) |
-| <a href="docs/screenshots/ee09-2019-06-anglers-portal.png"><img src="docs/screenshots/ee09-2019-06-anglers-portal.png" width="220" alt="Portal dla wędkarzy"></a> | **EE.09** 2019-06 | Portal dla wędkarzy | [rozwiązanie](exams/ee09-2019-06-anglers-portal/) · [arkusz](exams/ee09-2019-06-anglers-portal/wedkarz/ee09-2019-czerwiec-egzamin-zawodowy-praktyczny.pdf) |
-| <a href="docs/screenshots/e14-2020-06-florist.png"><img src="docs/screenshots/e14-2020-06-florist.png" width="220" alt="Kwiaciarnia"></a> | **E.14** 2020-06 | Kwiaciarnia | [rozwiązanie](exams/e14-2020-06-florist/) · [arkusz](exams/e14-2020-06-florist/e_14_2020_06_03_SG_kolor.pdf) |
-| <a href="docs/screenshots/e14-2020-01-computer-shop.png"><img src="docs/screenshots/e14-2020-01-computer-shop.png" width="220" alt="Sklep komputerowy"></a> | **E.14** 2020-01 | Sklep komputerowy | [rozwiązanie](exams/e14-2020-01-computer-shop/) · [arkusz](exams/e14-2020-01-computer-shop/e14_st20_prak1.pdf) |
-| <a href="docs/screenshots/e14-2019-06-black-friday.png"><img src="docs/screenshots/e14-2019-06-black-friday.png" width="220" alt="Sklep Black Friday"></a> | **E.14** 2019-06 | Sklep Black Friday | [rozwiązanie](exams/e14-2019-06-black-friday/) · [arkusz](exams/e14-2019-06-black-friday/e14-2019-czerwiec-egzamin-zawodowy-praktyczny.pdf) |
-| <a href="docs/screenshots/e14-2019-01-film-library.png"><img src="docs/screenshots/e14-2019-01-film-library.png" width="220" alt="Filmoteka"></a> | **E.14** 2019-01 | Filmoteka | [rozwiązanie](exams/e14-2019-01-film-library/) · [arkusz](exams/e14-2019-01-film-library/e14-2019-styczen-egzamin-zawodowy-praktyczny.pdf) |
+| <a href="docs/screenshots/inf03-2023-01-painting.png"><img src="docs/screenshots/inf03-2023-01-painting.png" width="220" alt="Malowanie"></a> | **INF.03** 2023-01 | Malowanie | [rozwiązanie](exams/inf03-2023-01-painting/solution/) · [kwerendy](exams/inf03-2023-01-painting/answer/kwerendy.txt) · [arkusz](exams/inf03-2023-01-painting/sheet/exam.pdf) |
+| <a href="docs/screenshots/inf03-2022-06-anglers-portal.png"><img src="docs/screenshots/inf03-2022-06-anglers-portal.png" width="220" alt="Portal dla wędkarzy"></a> | **INF.03** 2022-06 | Portal dla wędkarzy | [rozwiązanie](exams/inf03-2022-06-anglers-portal/solution/) · [kwerendy](exams/inf03-2022-06-anglers-portal/answer/kwerendy.txt) · [arkusz](exams/inf03-2022-06-anglers-portal/sheet/exam.pdf) |
+| <a href="docs/screenshots/ee09-2023-01-employee-records.png"><img src="docs/screenshots/ee09-2023-01-employee-records.png" width="220" alt="Akta pracownicze"></a> | **EE.09** 2023-01 | Akta pracownicze | [rozwiązanie](exams/ee09-2023-01-employee-records/solution/) · [kwerendy](exams/ee09-2023-01-employee-records/answer/kwerendy.txt) · [arkusz](exams/ee09-2023-01-employee-records/sheet/exam.pdf) |
+| <a href="docs/screenshots/ee09-2022-06-wholesale.png"><img src="docs/screenshots/ee09-2022-06-wholesale.png" width="220" alt="Hurtownia"></a> | **EE.09** 2022-06 | Hurtownia | [rozwiązanie](exams/ee09-2022-06-wholesale/solution/) · [kwerendy](exams/ee09-2022-06-wholesale/answer/kwerendy.txt) · [arkusz](exams/ee09-2022-06-wholesale/sheet/exam.pdf) |
+| <a href="docs/screenshots/ee09-2022-01-fishing-card.png"><img src="docs/screenshots/ee09-2022-01-fishing-card.png" width="220" alt="Karta wędkarska"></a> | **EE.09** 2022-01 | Karta wędkarska | [rozwiązanie](exams/ee09-2022-01-fishing-card/solution/) · [kwerendy](exams/ee09-2022-01-fishing-card/answer/kwerendy.txt) · [arkusz](exams/ee09-2022-01-fishing-card/sheet/exam.pdf) |
+| <a href="docs/screenshots/ee09-2020-06-organizer.png"><img src="docs/screenshots/ee09-2020-06-organizer.png" width="220" alt="Organizer"></a> | **EE.09** 2020-06 | Organizer | [rozwiązanie](exams/ee09-2020-06-organizer/solution/) · [kwerendy](exams/ee09-2020-06-organizer/answer/kwerendy.txt) · [arkusz](exams/ee09-2020-06-organizer/sheet/exam.pdf) |
+| <a href="docs/screenshots/ee09-2020-06-calendar.png"><img src="docs/screenshots/ee09-2020-06-calendar.png" width="220" alt="Kalendarz"></a> | **EE.09** 2020-06 | Kalendarz | [rozwiązanie](exams/ee09-2020-06-calendar/solution/) · [kwerendy](exams/ee09-2020-06-calendar/answer/kwerendy.txt) · [arkusz](exams/ee09-2020-06-calendar/sheet/exam.pdf) |
+| <a href="docs/screenshots/ee09-2019-06-anglers-portal.png"><img src="docs/screenshots/ee09-2019-06-anglers-portal.png" width="220" alt="Portal dla wędkarzy"></a> | **EE.09** 2019-06 | Portal dla wędkarzy | [rozwiązanie](exams/ee09-2019-06-anglers-portal/solution/) · [kwerendy](exams/ee09-2019-06-anglers-portal/answer/kwerendy.txt) · [arkusz](exams/ee09-2019-06-anglers-portal/sheet/exam.pdf) |
+| <a href="docs/screenshots/e14-2020-06-florist.png"><img src="docs/screenshots/e14-2020-06-florist.png" width="220" alt="Kwiaciarnia"></a> | **E.14** 2020-06 | Kwiaciarnia | [rozwiązanie](exams/e14-2020-06-florist/solution/) · [kwerendy](exams/e14-2020-06-florist/answer/kwerendy.txt) · [arkusz](exams/e14-2020-06-florist/sheet/exam.pdf) |
+| <a href="docs/screenshots/e14-2020-01-computer-shop.png"><img src="docs/screenshots/e14-2020-01-computer-shop.png" width="220" alt="Sklep komputerowy"></a> | **E.14** 2020-01 | Sklep komputerowy | [rozwiązanie](exams/e14-2020-01-computer-shop/solution/) · [kwerendy](exams/e14-2020-01-computer-shop/answer/kwerendy.txt) · [arkusz](exams/e14-2020-01-computer-shop/sheet/exam.pdf) |
+| <a href="docs/screenshots/e14-2019-06-black-friday.png"><img src="docs/screenshots/e14-2019-06-black-friday.png" width="220" alt="Sklep Black Friday"></a> | **E.14** 2019-06 | Sklep Black Friday | [rozwiązanie](exams/e14-2019-06-black-friday/solution/) · [kwerendy](exams/e14-2019-06-black-friday/answer/kwerendy.txt) · [arkusz](exams/e14-2019-06-black-friday/sheet/exam.pdf) |
+| <a href="docs/screenshots/e14-2019-01-film-library.png"><img src="docs/screenshots/e14-2019-01-film-library.png" width="220" alt="Filmoteka"></a> | **E.14** 2019-01 | Filmoteka | [rozwiązanie](exams/e14-2019-01-film-library/solution/) · [kwerendy](exams/e14-2019-01-film-library/answer/kwerendy.txt) · [arkusz](exams/e14-2019-01-film-library/sheet/exam.pdf) |
 
 ## Języki
 
@@ -60,22 +61,27 @@ Ten README jest po polsku i po [angielsku](README.md) (wersja domyślna). Strony
 
 | Gdzie | Co |
 |---|---|
-| `exams/<code>-<yyyy>-<mm>-<task>/` | Jeden egzamin: arkusz (PDF), zrzut bazy, rozwiązanie |
-| `exams/exams.json` | Manifest: strona startowa, zrzut SQL, nazwa bazy, arkusz |
-| `tools/screenshots.mjs` | Ładuje każdą bazę, uruchamia rozwiązanie, zapisuje zrzut |
+| `exams/<egzamin>/sheet/` | Oficjalny arkusz `exam.pdf` i oryginalne materiały (zrzut SQL, obrazy, teksty) |
+| `exams/<egzamin>/solution/` | Strony rozwiązania, CSS i obrazy przetworzone zgodnie z arkuszem |
+| `exams/<egzamin>/answer/` | `kwerendy.txt` ze wszystkimi kwerendami i komentarzami, `kwN.png` z wynikiem każdej kwerendy |
+| `exams/exams.json` | Manifest: strona startowa, zrzut SQL, nazwa bazy, arkusz, kwerendy i ich oczekiwana liczba |
+| `tools/screenshots.mjs` | Ładuje każdą bazę, uruchamia rozwiązanie, zapisuje zrzuty strony i wyników kwerend |
+| `tools/queries.mjs` | Czyta `kwerendy.txt`; `check` sprawdza, czy każdy egzamin ma wszystkie kwerendy |
 | `docs/screenshots/` | Zrzuty działających rozwiązań |
 
 ## Testy i jakość
 
 ```bash
 git ls-files -z '*.php' | xargs -0 -n1 php -l
+node tools/queries.mjs check
 node tools/screenshots.mjs
 ```
 
 | Kontrola | Wynik | Data |
 |---|---|---|
-| php -l | PASS (wszystkie pliki PHP) | 2026-11-25 |
-| Zrzuty ekranu | PASS (12/12 rozwiązań uruchomionych na PHP 8.3 + MariaDB, bez błędów PHP) | 2026-11-25 |
+| php -l | PASS (wszystkie pliki PHP) | 2026-11-26 |
+| Kwerendy | PASS (12/12 egzaminów ma wszystkie kwerendy; każda uruchomiona na MariaDB, wyniki w `answer/`) | 2026-11-26 |
+| Zrzuty ekranu | PASS (12/12 rozwiązań uruchomionych na PHP 8.3 + MariaDB, bez błędów PHP) | 2026-11-26 |
 
 ## Licencja
 

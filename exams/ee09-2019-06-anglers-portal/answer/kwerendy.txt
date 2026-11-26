@@ -1,0 +1,11 @@
+-- Zapytanie 1: nazwa i wystepowanie ryb drapieżnych (styl_zycia = 1)
+SELECT nazwa, wystepowanie FROM ryby WHERE styl_zycia = 1;
+
+-- Zapytanie 2: Ryby_id i wymiar_ochronny dla wymiaru ochronnego mniejszego niż 50 cm
+SELECT Ryby_id, wymiar_ochronny FROM okres_ochronny WHERE wymiar_ochronny < 50;
+
+-- Zapytanie 3: nazwa ryby oraz akwen i województwo łowisk, które są jeziorami (rodzaj = 2), z relacją
+SELECT ryby.nazwa, lowisko.akwen, lowisko.wojewodztwo FROM ryby JOIN lowisko ON lowisko.Ryby_id = ryby.id WHERE lowisko.rodzaj = 2;
+
+-- Zapytanie 4: kolumna dobowy_limit typu numerycznego, całkowitego
+ALTER TABLE ryby ADD dobowy_limit INT;
