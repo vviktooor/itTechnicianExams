@@ -5,10 +5,12 @@
     "date": "2023-01",
     "title_en": "Painting",
     "title_pl": "Malowanie",
-    "entry": "Arkusz 1/zad1/mieszamy.html",
-    "sql": "Arkusz 1/zad1/malarz.sql",
+    "entry": "solution/mieszamy.html",
+    "sql": "sheet/malarz.sql",
     "database": "malarz",
-    "pdf": "inf03-2023-styczen-egzamin-zawodowy-praktyczny.pdf"
+    "pdf": "sheet/exam.pdf",
+    "queries": "answer/kwerendy.txt",
+    "query_count": 4
   },
   {
     "dir": "inf03-2022-06-anglers-portal",
@@ -16,10 +18,12 @@
     "date": "2022-06",
     "title_en": "Anglers' portal",
     "title_pl": "Portal dla wędkarzy",
-    "entry": "wedkuj.php",
-    "sql": "baza.sql",
+    "entry": "solution/wedkuj.php",
+    "sql": "sheet/baza.sql",
     "database": "wedkowanie",
-    "pdf": "inf03-2022-czerwiec-egzamin-zawodowy-praktyczny.pdf"
+    "pdf": "sheet/exam.pdf",
+    "queries": "answer/kwerendy.txt",
+    "query_count": 4
   },
   {
     "dir": "ee09-2023-01-employee-records",
@@ -27,10 +31,12 @@
     "date": "2023-01",
     "title_en": "Employee records",
     "title_pl": "Akta pracownicze",
-    "entry": "rozwiazanie/index.php",
-    "sql": "ee09_zad1/baza.sql",
+    "entry": "solution/index.php",
+    "sql": "sheet/baza.sql",
     "database": "firma",
-    "pdf": "ee09-2023-styczen-egzamin-zawodowy-praktyczny.pdf"
+    "pdf": "sheet/exam.pdf",
+    "queries": "answer/kwerendy.txt",
+    "query_count": 4
   },
   {
     "dir": "ee09-2022-06-wholesale",
@@ -38,10 +44,12 @@
     "date": "2022-06",
     "title_en": "Wholesale",
     "title_pl": "Hurtownia",
-    "entry": "hurtownia.php",
-    "sql": "baza.sql",
-    "database": "wr_hurtownia",
-    "pdf": "EE.09-03-22.06-SG.pdf"
+    "entry": "solution/opinie.php",
+    "sql": "sheet/baza.sql",
+    "database": "hurtownia",
+    "pdf": "sheet/exam.pdf",
+    "queries": "answer/kwerendy.txt",
+    "query_count": 4
   },
   {
     "dir": "ee09-2022-01-fishing-card",
@@ -49,10 +57,12 @@
     "date": "2022-01",
     "title_en": "Fishing card",
     "title_pl": "Karta wędkarska",
-    "entry": "karta.html",
-    "sql": "baza.sql",
+    "entry": "solution/karta.html",
+    "sql": "sheet/baza.sql",
     "database": "wedkowanie",
-    "pdf": "ee09-2022-styczen-egzamin-zawodowy-praktyczny.pdf"
+    "pdf": "sheet/exam.pdf",
+    "queries": "answer/kwerendy.txt",
+    "query_count": 4
   },
   {
     "dir": "ee09-2020-06-organizer",
@@ -60,10 +70,12 @@
     "date": "2020-06",
     "title_en": "Organizer",
     "title_pl": "Organizer",
-    "entry": "organizer.php",
-    "sql": "baza5.sql",
+    "entry": "solution/organizer.php",
+    "sql": "sheet/baza5.sql",
     "database": "egzamin6",
-    "pdf": "Arkusz praktyczny EE.09 - 2020 - czerwiec - zad. 01 (php) - Technik informatyk.pdf"
+    "pdf": "sheet/exam.pdf",
+    "queries": "answer/kwerendy.txt",
+    "query_count": 4
   },
   {
     "dir": "ee09-2020-06-calendar",
@@ -71,10 +83,12 @@
     "date": "2020-06",
     "title_en": "Calendar",
     "title_pl": "Kalendarz",
-    "entry": "kalendarz.php",
-    "sql": "baza5.sql",
-    "database": "egzamin",
-    "pdf": "ee.09-03-20.06-SG.pdf"
+    "entry": "solution/kalendarz.php",
+    "sql": "sheet/baza5.sql",
+    "database": "egzamin5",
+    "pdf": "sheet/exam.pdf",
+    "queries": "answer/kwerendy.txt",
+    "query_count": 4
   },
   {
     "dir": "ee09-2019-06-anglers-portal",
@@ -82,10 +96,12 @@
     "date": "2019-06",
     "title_en": "Anglers' portal",
     "title_pl": "Portal dla wędkarzy",
-    "entry": "wedkarz/wedkuj.php",
-    "sql": "wedkarz/baza.sql",
+    "entry": "solution/wedkuj.php",
+    "sql": "sheet/baza.sql",
     "database": "wedkowanie",
-    "pdf": "wedkarz/ee09-2019-czerwiec-egzamin-zawodowy-praktyczny.pdf"
+    "pdf": "sheet/exam.pdf",
+    "queries": "answer/kwerendy.txt",
+    "query_count": 4
   },
   {
     "dir": "e14-2020-06-florist",
@@ -93,10 +109,12 @@
     "date": "2020-06",
     "title_en": "Florist",
     "title_pl": "Kwiaciarnia",
-    "entry": "index.html",
-    "sql": "kwiaciarnia.sql",
+    "entry": "solution/index.html",
+    "sql": "answer/kwiaciarnia.sql",
     "database": "kwiaciarnia",
-    "pdf": "e_14_2020_06_03_SG_kolor.pdf"
+    "pdf": "sheet/exam.pdf",
+    "queries": "answer/kwerendy.txt",
+    "query_count": 3
   },
   {
     "dir": "e14-2020-01-computer-shop",
@@ -104,10 +122,12 @@
     "date": "2020-01",
     "title_en": "Computer shop",
     "title_pl": "Sklep komputerowy",
-    "entry": "materialy1/index.php",
-    "sql": "materialy1/baza.sql",
-    "database": "sklep2",
-    "pdf": "e14_st20_prak1.pdf"
+    "entry": "solution/index.php",
+    "sql": "sheet/baza.sql",
+    "database": "sklep",
+    "pdf": "sheet/exam.pdf",
+    "queries": "answer/kwerendy.txt",
+    "query_count": 4
   },
   {
     "dir": "e14-2019-06-black-friday",
@@ -115,10 +135,12 @@
     "date": "2019-06",
     "title_en": "Black Friday shop",
     "title_pl": "Sklep Black Friday",
-    "entry": "index.php",
-    "sql": "materialy1/sklep.sql",
+    "entry": "solution/index.php",
+    "sql": "sheet/sklep.sql",
     "database": "sklep",
-    "pdf": "e14-2019-czerwiec-egzamin-zawodowy-praktyczny.pdf"
+    "pdf": "sheet/exam.pdf",
+    "queries": "answer/kwerendy.txt",
+    "query_count": 4
   },
   {
     "dir": "e14-2019-01-film-library",
@@ -126,9 +148,11 @@
     "date": "2019-01",
     "title_en": "Film library",
     "title_pl": "Filmoteka",
-    "entry": "index.html",
-    "sql": "dane.sql",
+    "entry": "solution/index.html",
+    "sql": "sheet/dane.sql",
     "database": "dane",
-    "pdf": "e14-2019-styczen-egzamin-zawodowy-praktyczny.pdf"
+    "pdf": "sheet/exam.pdf",
+    "queries": "answer/kwerendy.txt",
+    "query_count": 4
   }
 ]

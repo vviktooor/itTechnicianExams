@@ -1,0 +1,11 @@
+-- Zapytanie 1: nazwa produktów objętych promocją
+SELECT nazwa FROM towary WHERE promocja = 1;
+
+-- Zapytanie 2: cena produktu cienkopis
+SELECT cena FROM towary WHERE nazwa = 'Cienkopis';
+
+-- Zapytanie 3: nazwa każdego dostawcy i liczba dostarczanych przez niego towarów (pole ilosc)
+SELECT dostawcy.nazwa, COUNT(towary.id) AS ilosc FROM dostawcy LEFT JOIN towary ON towary.idDostawcy = dostawcy.id GROUP BY dostawcy.id, dostawcy.nazwa;
+
+-- Zapytanie 4: nowe pole e_mail typu TEXT w tabeli dostawcy
+ALTER TABLE dostawcy ADD e_mail TEXT;

@@ -1,0 +1,11 @@
+-- Zapytanie 1: id, nazwa, opis i cena podzespołów tańszych niż 1000 zł
+SELECT id, nazwa, opis, cena FROM podzespoly WHERE cena < 1000;
+
+-- Zapytanie 2: nazwa i opis dostępnych podzespołów firmy Intel (producenci.id = 1)
+SELECT nazwa, opis FROM podzespoly WHERE dostepnosc = 1 AND producenci_id = 1;
+
+-- Zapytanie 3: nazwa podzespołu i odpowiadająca mu nazwa producenta
+SELECT podzespoly.nazwa, producenci.nazwa FROM podzespoly JOIN producenci ON producenci.id = podzespoly.producenci_id;
+
+-- Zapytanie 4: nazwa producenta Patriot zapisana wielkimi literami
+UPDATE producenci SET nazwa = 'PATRIOT' WHERE nazwa = 'Patriot';
